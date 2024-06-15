@@ -1,0 +1,23 @@
+.offers {
+    margin-top: 180px;
+
+    h2 {
+        text-align: center;
+        color: var(--color-dark-blue);
+        font-size: 48px;
+        line-height: 72px;
+        position: relative;
+    }
+
+    h2::before {
+        content: "";
+        position: absolute;
+        background-color: var(--color-light-blue);
+        width: 100%;
+        top: -80px;
+        left: 0;
+        height: 350px;
+    }
+
+    
+}

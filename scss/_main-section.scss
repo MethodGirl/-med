@@ -1,0 +1,170 @@
+.main-section {
+    background-color: #4FBFA5;
+
+    .main-nav {
+        display: flex;
+        justify-content: end;
+        padding-top: 24px;
+        align-items: center;
+
+        .main-nav-links {
+            border: none;
+            background-color: var(--color-blue);
+            color: white;
+            font-size: 18px;
+            padding: 0;
+            margin-right: 58px
+        }
+
+        .main-nav-links:last-of-type {
+            margin-right: 100px
+        }
+
+        .future-popup {
+            margin-right: 10px;
+
+            .appointment-btn {
+                border: none;
+                background-color: var(--color-white);
+                padding: 8px 12px;
+                font-size: 18px;
+                width: 175px;
+            }
+
+            .appointment-btn:hover {
+                background-color: var(--color-dark-blue);
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .headline {
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+
+        .main-description {
+            margin-right: 60px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: var(--color-white);
+                font-size: 48px;
+                line-height: 72px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                color: var(--color-white);
+                line-height: 21px;
+                margin-bottom: 40px;
+            }
+
+            .main-description-link {
+                width: 163px;
+                background-color: var(--color-dark-blue);
+                text-transform: uppercase;
+                border: none;
+                color: var(--color-white);
+                padding: 15px 25px;
+            }
+
+            .arrows {
+                display: flex;
+                align-self: end;
+                margin-top: 30px;
+                border: 1px solid var(--color-white);
+                width: 110px;
+
+                .arrow {
+                    width: 55px;
+                    height: 35px;
+                    background-color: var(--color-blue);
+                    border: none;
+                }
+
+                .prev-arrow {
+                    position: relative;
+                }
+
+                .prev-arrow::before {
+                    content: "";
+                    position: absolute;
+                    width: 31px;
+                    background-image: url(../img/svg/Arrow-1.svg);
+                    height: 8px;
+                    bottom: 13px;
+                    left: 13px;
+                }
+
+                .exp {
+                    border-right: 1px solid white;
+                    margin: 0;
+                }
+
+                .next-arrow {
+                    position: relative;
+                }
+
+                .next-arrow::before {
+                    content: "";
+                    position: absolute;
+                    width: 31px;
+                    background-image: url(../img/svg/Arrow-2.svg);
+                    height: 8px;
+                    bottom: 13px;
+                    left: 13px;
+                }
+            }
+        }
+    }
+
+    .category-list {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        justify-content: stretch;
+
+        .category-item {
+            height: 80px;
+            display: block;
+            min-width: 324px; 
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 324px;
+            transition: var(--transition-duration);
+        }
+
+        .category-btn {
+            border: none;
+            background-color: var(--color-dark-blue);
+            font-size: 21px;
+            height: 80px;
+            line-height: 31px;
+            width: 100%;
+            color: var(--color-white);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .category-item:hover {
+            flex-basis: 100%;
+        }
+
+        .category-btn-colorful {
+            background-color: var(--color-blue);
+            height: 80px;
+            min-width: 324px;
+        }
+
+        .category-item {
+            height: 80px;
+            min-width: 324px;
+        }
+    }
+
+
+}
