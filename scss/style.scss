@@ -200,7 +200,8 @@ button {
 @import "_main-section";
 @import "_introduction";
 @import "_offers";
- 
+@import "_footer";
+
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -236,7 +237,6 @@ button {
   color: var(--color-dark-blue);
 }
 
-.news-plot_second, 
-.news-plot_third{
+.news-plot_content{
     display: none;
 }
