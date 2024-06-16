@@ -1,276 +1,294 @@
-.introduction-first-line {
-    margin: 80px 0 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.intoduction {
 
-    .innovaton {
+    .introduction-first-line {
+        margin: 80px 0 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .innovaton {
+            position: relative;
+            height: 580px;
+            max-width: 526px;
+            background-color: #00868A;
+
+            .innovaton-btn {
+                position: absolute;
+                top: 35px;
+                border: none;
+                padding: 9px 15px 10px;
+                color: white;
+                line-height: 21px;
+                left: 40px;
+                font-size: 18px;
+                background-color: #4FBFA5;
+            }
+
+            h3 {
+                padding-top: 105px;
+                font-size: 30px;
+                font-weight: 300;
+                line-height: 45px;
+                color: white;
+                margin-left: 40px;
+            }
+
+            .innovation-moreinfo {
+                display: flex;
+                align-items: center;
+
+                .innovaton-info-btn {
+                    margin: 25px 20px 45px 40px;
+                    position: relative;
+                    width: 50px;
+                    background-color: #00868A;
+                    height: 40px;
+                    border: 1px solid white;
+                }
+
+                .innovaton-info-btn::before {
+                    content: "";
+                    position: absolute;
+                    width: 31px;
+                    background-image: url(../img/svg/Arrow-2.svg);
+                    height: 8px;
+                    top: 15px;
+                    bottom: 13px;
+                    left: 10px;
+                }
+
+                .innovation-details {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 1px;
+                    margin-bottom: 15px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .patent {
+        width: 638px;
         position: relative;
-        height: 580px;
-        max-width: 526px;
-        background-color: #00868A;
 
-        .innovaton-btn {
+        .patent-btn {
             position: absolute;
-            top: 35px;
+            border: none;
+            padding: 9px 15px 10px;
+            color: white;
+            line-height: 21px;
+            font-size: 18px;
+            background-color: #4FBFA5;
+        }
+
+        .patent-properties {
+            display: flex;
+            padding-top: 85px;
+            justify-content: space-between;
+
+
+            .patent-properties_list {
+                position: relative;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 116px 15px 0;
+                    position: absolute;
+
+                    h2 {
+                        font-size: 48px;
+                        color: lightgray;
+                        line-height: 72px;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        margin: 15px 0 15px 20px;
+                        font-size: 14px;
+                        line-height: 21px;
+                        width: 144px;
+                        color: lightgray;
+                    }
+                }
+
+                li:last-of-type {
+                    bottom: 0;
+                }
+
+                li:nth-of-type(3) {
+                    bottom: 120px;
+                }
+
+                li:nth-of-type(2) {
+                    bottom: 240px;
+                }
+
+
+
+                li:hover {
+                    margin: 0;
+                    transform-origin: bottom left;
+                    transform: scale(1.5);
+                }
+
+                li:nth-of-type(1):hover {
+                    margin: 0;
+                    transform-origin: top left;
+                    transform: scale(1.5);
+                }
+
+                li:hover h2 {
+                    color: #00868A;
+                }
+
+                li:hover p {
+                    font-size: 18px;
+                    color: #000000;
+                    width: 200px;
+                }
+            }
+
+        }
+
+
+    }
+
+    .news {
+        display: flex;
+        position: relative;
+
+        input[type=radio] {
+            display: none;
+        }
+
+        input#a:checked~.news-plot #a_1 {
+            display: block;
+        }
+
+        input#a:checked~.news-title label[for=a] {
+            background-color: var(--color-dark-blue);
+        }
+
+        input#b:checked~.news-plot #b_2 {
+            display: block;
+        }
+
+
+        input#b:checked~.news-title label[for=b] {
+            background-color: var(--color-dark-blue);
+        }
+
+        input#c:checked~.news-plot #c_3 {
+            display: block;
+        }
+
+        input#c:checked~.news-title label[for=c] {
+            background-color: var(--color-dark-blue);
+        }
+
+        .news-btn {
             border: none;
             padding: 9px 15px 10px;
             color: white;
             line-height: 21px;
             left: 40px;
+            top: 35px;
             font-size: 18px;
+            background-color: #00868A;
+            position: absolute;
+        }
+
+        .news-title-list {
+            width: 526px;
             background-color: #4FBFA5;
-        }
-
-        h3 {
             padding-top: 105px;
-            font-size: 30px;
-            font-weight: 300;
-            line-height: 45px;
-            color: white;
-            margin-left: 40px;
-        }
 
-        .innovation-moreinfo {
-            display: flex;
-            align-items: center;
-
-            .innovaton-info-btn {
-                margin: 25px 20px 45px 40px;
-                position: relative;
-                width: 50px;
-                background-color: #00868A;
-                height: 40px;
-                border: 1px solid white;
-            }
-
-            .innovaton-info-btn::before {
-                content: "";
-                position: absolute;
-                width: 31px;
-                background-image: url(../img/svg/Arrow-2.svg);
-                height: 8px;
-                top: 15px;
-                bottom: 13px;
-                left: 10px;
-            }
-
-            .innovation-details {
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 1px;
-                margin-bottom: 15px;
-                color: white;
-                text-transform: uppercase;
-                font-weight: 600;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-    }
-}
-
-.patent {
-    width: 638px;
-    position: relative;
-
-    .patent-btn {
-        position: absolute;
-        border: none;
-        padding: 9px 15px 10px;
-        color: white;
-        line-height: 21px;
-        font-size: 18px;
-        background-color: #4FBFA5;
-    }
-
-    .patent-properties {
-        display: flex;
-        padding-top: 85px;
-        justify-content: space-between;
-
-
-        .patent-properties_list {
-            position: relative;
-
-            li {
+            .news-title-item {
+                height: 139px;
                 display: flex;
-                align-items: center;
-                margin: 0 116px 15px 0;
-                position: absolute;
 
-                h2 {
-                    font-size: 48px;
-                    color: lightgray;
-                    line-height: 72px;
-                    font-weight: 500;
+
+
+                label {
+                    width: 100%;
+                    height: 100%;
+                    padding: 40px 40px 0;
+                    display: block;
                 }
 
-                p {
-                    margin: 15px 0 15px 20px;
-                    font-size: 14px;
-                    line-height: 21px;
-                    width: 144px;
-                    color: lightgray;
+                .news-title-btn {
+                    border: none;
+                    background-color: transparent;
+                    color: white;
+                    text-align: start;
+                    line-height: 27px;
+                    padding: 0;
                 }
-            }
 
-            li:last-of-type {
-                bottom: 0;
-            }
 
-            li:nth-of-type(3) {
-                bottom: 120px;
-            }
 
-            li:nth-of-type(2) {
-                bottom: 240px;
+
+
             }
 
 
 
-            li:hover {
-                margin: 0;
-                transform-origin: bottom left;
-                transform: scale(1.5);
+        }
+
+        .news-plot_content {
+            background-color: rgba(172, 226, 228, 0.3137254902);
+            height: 522px;
+
+            h3 {
+                padding: 35px 60px 25px;
+                line-height: 36px;
+                font-size: 24px;
             }
 
-            li:hover h2 {
-                color: #00868A;
-            }
-
-            li:hover p {
+            .idk {
                 font-size: 18px;
-                color: #000000;
-                width: 200px;
-            }
-        }
-
-    }
-
-
-}
-
-/*input[type=radio] {
-    
-}*/
-
-.news {
-    display: flex;
-    position: relative;
-
-    .news-btn {
-        border: none;
-        padding: 9px 15px 10px;
-        color: white;
-        line-height: 21px;
-        left: 40px;
-        top: 35px;
-        font-size: 18px;
-        background-color: #00868A;
-        position: absolute;
-    }
-
-    .news-title-list {
-        width: 526px;
-        background-color: #4FBFA5;
-        padding-top: 105px;
-
-        .news-title-item {
-            height: 139px;
-            display: flex;
-
-
-
-            label {
-                width: 100%;
-                height: 100%;
-            }
-
-            .news-title-btn {
-                border: none;
-                background-color: transparent;
-                color: white;
-                text-align: start;
-                padding-inline: 40px;
-                line-height: 27px;
-            }
-
-
-            input#a:checked~.container {
-
-                & .news>.news-plot #a_1,
-                & label[for="a"]>button {
-                    background-color: orange;
-                    display: block;
+                padding: 0 60px 20px;
+                span {
+                    color: var(--color-dark-blue);
                 }
             }
 
-            input#b:checked~.container {
+            .news-plot-list {
+                padding: 0 60px 78px;
 
-                & .news>.news-plot #b_2,
-                & label[for="b"]>button {
-                    background-color: orange;
-                    display: block;
+                li {
+                    position: relative;
+                    margin-bottom: 20px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+
+                li:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                li::before {
+                    content: "";
+                    position: absolute;
+                    background-color: #00868A;
+                    border-radius: 50%;
+                    height: 6px;
+                    top: 7px;
+                    left: -15px;
+                    width: 6px;
                 }
             }
-
-            input#c:checked~.container {
-
-                & .news>.news-plot #c_3,
-                & label[for="c"]>button {
-                    background-color: orange;
-                    display: block;
-                }
-            }
-
-
-
-        }
-
-
-
-    }
-
-    .news-plot_first {
-        background-color: #ace2e450;
-
-        h3 {
-            padding: 35px 60px 25px;
-            line-height: 36px;
-            font-size: 24px;
-        }
-
-        .news-plot-list {
-            padding: 0 60px 78px;
-
-            li {
-                position: relative;
-                margin-bottom: 20px;
-
-                p {
-                    font-size: 14px;
-                    line-height: 21px;
-                }
-            }
-
-            li:last-of-type {
-                margin-bottom: 0;
-            }
-
-            li::before {
-                content: "";
-                position: absolute;
-                background-color: #00868A;
-                border-radius: 50%;
-                height: 6px;
-                top: 7px;
-                left: -15px;
-                width: 6px;
-            }
-
         }
     }
 }
