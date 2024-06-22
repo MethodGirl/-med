@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../font/Gilroy-ExtraBold.otf") format("OpenType");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    font-style: light;
+    font-weight: 300;
+    src: url("../font/Gilroy-Light.otf") format("OpenType");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../font/gilroy-medium.ttf") format("OpenType");
+    font-display: swap;
+  }
