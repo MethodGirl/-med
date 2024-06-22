@@ -227,6 +227,7 @@
             <button class="news-button" type="button">Новости</button>
             <div class="news-title">
               <ul class="news-title-list">
+                <!-- TODO: Лучше назвать new-title-list-item, чтобы было понятно что этот item относится к списку -->
                 <li class="news-title-item">
                   <button class="news-title-button" type="button">
                   <label for="a">
@@ -261,6 +262,7 @@
                 Мнение специалистов центра
               </h3>
               <ul class="news-plot-list">
+                <!-- TODO: класс news-plot-item нигде не используется в стилях, надо убрать весь неиспользуемый код -->
                 <li class="news-plot-item">
                   <p class="news-plot-description">
                     Процедуры аппаратной косметологии на оборудовании
@@ -563,6 +565,13 @@
           <address class="footer-contacts-info">
             <div class="footer-info phone-number">
               <p class="footer-info-title">телефон</p>
+              <!-- TODO: контент в тегах размещай вот так, чтоб содержимое было на отдельной строке от тега, если нужно в несколько строк всё уместить
+                <a href="tel:+78121234567" class="footer-phone-link">
+                  +7 (812) 123-45-67
+                </a>
+
+                пробегись по всей хтмлке и пофиксь везде, так гораздо проще читается
+              -->
               <a href="tel:+78121234567" class="footer-phone-link phone-number"
                 >+7 (812) 123-45-67</a
               >
