@@ -170,6 +170,7 @@ svg * {
   --color-light-blue: #ace2e450;
   --color-white: #FFFFFF;
   --color-black: #000000;
+  --color-light-gray: #C4C4C4;
 
   --font-family-base: "Gilroy", sans-serif;
   --border: 1px solid var(--color-white);
@@ -208,7 +209,20 @@ button {
   padding-inline: var(--container-padding-x);
 }
 
-.poorvision-btn {
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important; 
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.poorvision-button {
   position: relative;
   text-transform: uppercase;
   width: 270px;
@@ -222,9 +236,9 @@ button {
   margin-inline: 29px;
   white-space: nowrap;
 }
-.poorvision-btn::before {
+.poorvision-button::before {
   content: "";
-  background-image: url(../img/svg/Vector.svg);
+  background-image: url(../img/svg/poorvision.svg);
   position: absolute;
   top: 50%;
   left: 15px;
@@ -233,10 +247,6 @@ button {
   height: 18px;
 }
 
-.header-phone-link:hover {
-  color: var(--color-dark-blue);
-}
-
-.news-plot_content{
+.news-plot-content{
     display: none;
 }
