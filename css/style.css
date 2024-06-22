@@ -465,6 +465,10 @@ button {
   font-size: 18px;
   background-color: var(--color-blue);
 }
+.main-introduction .introduction-first-line .introduction-innovation .innovation-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-blue);
+}
 .main-introduction .introduction-first-line .introduction-innovation h3 {
   padding-top: 105px;
   font-size: 30px;
@@ -536,6 +540,9 @@ button {
   line-height: 21px;
   font-size: 18px;
   background-color: var(--color-blue);
+}
+.main-introduction .introduction-patent .patent-button:hover {
+  background-color: var(--color-dark-blue);
 }
 .main-introduction .introduction-patent .patent-properties {
   display: -webkit-box;
@@ -644,6 +651,10 @@ button {
   font-size: 18px;
   background-color: var(--color-dark-blue);
   position: absolute;
+}
+.main-introduction .introduction-news .news-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue);
 }
 .main-introduction .introduction-news .news-title-list {
   width: 526px;
@@ -754,6 +765,9 @@ button {
   top: 31px;
   left: 30px;
   background-color: var(--color-blue);
+}
+.main-offers .offers .offers-name .offers-name-button:hover {
+  background-color: var(--color-dark-blue);
 }
 .main-offers .offers .offers-more-info {
   display: -webkit-box;
