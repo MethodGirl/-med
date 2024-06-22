@@ -1,4 +1,4 @@
-.offers {
+.main-offers {
     margin: 180px 0 100px;
 
     h2 {
@@ -21,49 +21,49 @@
         z-index: -1;
     }
 
-    .all-offers {
+    .offers {
         justify-content: space-evenly;
         display: flex;
 
-        .offers-laser-photorejuvenation {
+        .offers-name {
             position: relative;
             width: 306px;
 
-            .offers-name_btn {
+            .offers-name-button {
                 position: absolute;
                 border: none;
                 padding: 9px 15px 10px;
-                color: white;
+                color: var(--color-white);
                 line-height: 21px;
                 font-size: 18px;
                 top: 31px;
                 left: 30px;
-                background-color: #4FBFA5;
+                background-color: var(--color-blue);
             }
         }
 
         .offers-moreinfo {
             display: flex;
-            background-color: #00868A;
+            background-color: var(--color-dark-blue);
             align-items: flex-end;
 
             p {
                 font-size: 21px;
                 line-height: 31px;
                 padding: 25px 15px 25px 30px;
-                color: white;
+                color: var(--color-white);
             }
 
-            .offers-moreinfo-btn {
+            .offers-moreinfo-button {
                 margin: 37px 30px 37px 0;
                 position: relative;
                 width: 70px;
-                background-color: #00868A;
+                background-color: var(--color-dark-blue);
                 height: 35px;
-                border: 1px solid white;
+                border: 1px solid var(--color-white);
             }
 
-            .offers-moreinfo-btn::before {
+            .offers-moreinfo-button::before {
                 content: "";
                 position: absolute;
                 width: 31px;
@@ -71,6 +71,10 @@
                 height: 8px;
                 bottom: 13px;
                 left: 8px;
+            }
+
+            .offers-moreinfo-button:hover {
+                background-color: var(--color-blue);
             }
         }
     }
