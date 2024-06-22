@@ -52,6 +52,7 @@ footer {
                 margin-bottom: 30px;
                 height: 55px;
             }
+
             .footer-info {
                 margin-bottom: 30px;
                 height: 108px;
@@ -131,14 +132,15 @@ footer {
             text-transform: uppercase;
         }
 
-
         ul {
             display: flex;
             align-items: center;
+
             li {
                 width: 80px;
                 padding: 25px;
             }
+            
             li:last-child {
                 width: 65px;
             }
