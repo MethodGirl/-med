@@ -264,7 +264,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* TODO: отдели пустой строкой блоки со стилями */
 }
 .main-section .main-nav .main-nav-button {
   border: none;
@@ -824,6 +823,7 @@ footer .footer-container .footer-top .footer-services-title {
 }
 footer .footer-container .footer-top li {
   margin-bottom: 15px;
+  display: inline-block;
 }
 footer .footer-container .footer-top li a {
   font-size: 14px;
@@ -831,9 +831,15 @@ footer .footer-container .footer-top li a {
   color: var(--color-black);
 }
 footer .footer-container .footer-top li a:hover {
-  /* TODO: при ховере увеличение размера фонта сдвигаются остальные элементы списка, т.к. увеличивают размер самого элемента. Нужно пофиксить, чтобы соседние элементы не сдвигались  */
-  font-size: 16px;
   color: var(--color-dark-blue);
+}
+footer .footer-container .footer-top li:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 footer .footer-container .footer-top li:last-child {
   margin-bottom: 0;
