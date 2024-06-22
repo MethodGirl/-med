@@ -24,6 +24,11 @@
                 background-color: var(--color-blue);
             }
 
+            .innovation-button:hover {
+                background-color: var(--color-white);
+                color: var(--color-dark-blue);
+            }
+
             h3 {
                 padding-top: 105px;
                 font-size: 30px;
@@ -101,6 +106,10 @@
             line-height: 21px;
             font-size: 18px;
             background-color: var(--color-blue);
+        }
+
+        .patent-button:hover {
+            background-color: var(--color-dark-blue);
         }
 
         .patent-properties {
@@ -213,6 +222,11 @@
             font-size: 18px;
             background-color: var(--color-dark-blue);
             position: absolute;
+        }
+
+        .news-button:hover {
+            background-color: var(--color-white);
+            color: var(--color-blue);
         }
 
         .news-title-list {
