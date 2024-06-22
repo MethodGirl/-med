@@ -33,6 +33,7 @@
                 margin-left: 40px;
             }
 
+            /* TODO: moreinfo это два слова, надо разделить */
             .innovation-moreinfo {
                 display: flex;
                 align-items: center;
@@ -107,6 +108,7 @@
             display: flex;
             padding-top: 85px;
             justify-content: space-between;
+            /* почисти код от лишних пустых строк */
 
 
             .patent-properties-list {
@@ -145,6 +147,7 @@
                 li:nth-of-type(2) {
                     bottom: 240px;
                 }
+                /* почисти код от лишних пустых строк */
 
 
 
@@ -156,6 +159,7 @@
 
                 li:nth-of-type(1):hover {
                     margin: 0;
+                    /* TODO: надо убрать топ, а то элемент вниз сдвигается */
                     transform-origin: top left;
                     transform: scale(1.5);
                 }
@@ -170,8 +174,10 @@
                     width: 200px;
                 }
             }
+            /* почисти код от лишних пустых строк */
 
         }
+        /* почисти код от лишних пустых строк */
 
 
     }
@@ -195,6 +201,7 @@
         input#b:checked~.news-plot #b_2 {
             display: block;
         }
+        /* почисти код от лишних пустых строк */
 
 
         input#b:checked~.news-title label[for=b] {
@@ -229,6 +236,7 @@
             .news-title-item {
                 height: 139px;
                 display: flex;
+                /* TODO: почисти код от лишних пустых строк */
 
 
 
@@ -272,6 +280,7 @@
                 padding: 0 60px 78px;
 
                 li {
+                    /* TODO: обрати внимание, что на макете точечки лишь немного выезжают за заголовок контента. Нужно пофикситью */
                     position: relative;
                     margin-bottom: 20px;
 
