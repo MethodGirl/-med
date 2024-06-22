@@ -1,5 +1,5 @@
 .main-section {
-    background-color: #4FBFA5;
+    background-color: var(--color-blue);
 
     .main-nav {
         display: flex;
@@ -7,23 +7,27 @@
         padding-top: 24px;
         align-items: center;
 
-        .main-nav-links {
+        .main-nav-button {
             border: none;
             background-color: var(--color-blue);
-            color: white;
+            color: var(--color-white);
             font-size: 18px;
             padding: 0;
             margin-right: 58px
         }
+        .main-nav-button:hover {
+            border-bottom: 1px solid var(--color-white);
+        }
+        
 
-        .main-nav-links:last-of-type {
+        .main-nav-button:last-of-type {
             margin-right: 100px
         }
 
-        .future-popup {
+        .main-nav-popup {
             margin-right: 10px;
 
-            .appointment-btn {
+            .popup-button {
                 border: none;
                 background-color: var(--color-white);
                 padding: 8px 12px;
@@ -31,19 +35,19 @@
                 width: 175px;
             }
 
-            .appointment-btn:hover {
+            .popup-button:hover {
                 background-color: var(--color-dark-blue);
                 color: var(--color-white);
             }
         }
     }
 
-    .headline {
+    .banner {
         display: flex;
         margin-top: 30px;
         align-items: center;
 
-        .main-description {
+        .banner-headline {
             margin-right: 60px;
             display: flex;
             flex-direction: column;
@@ -62,7 +66,7 @@
                 margin-bottom: 40px;
             }
 
-            .main-description-link {
+            .banner-link {
                 width: 163px;
                 background-color: var(--color-dark-blue);
                 text-transform: uppercase;
@@ -71,14 +75,19 @@
                 padding: 15px 25px;
             }
 
-            .arrows {
+            .banner-link:hover {
+                border-radius: 70%;
+                font-weight: 700;
+            }
+
+            .banner-arrows {
                 display: flex;
                 align-self: end;
                 margin-top: 30px;
                 border: 1px solid var(--color-white);
                 width: 110px;
 
-                .arrow {
+                .banner-arrow {
                     width: 55px;
                     height: 35px;
                     background-color: var(--color-blue);
@@ -99,13 +108,17 @@
                     left: 13px;
                 }
 
-                .exp {
-                    border-right: 1px solid white;
+                .banner-arrow-separation {
+                    border-right: 1px solid var(--color-white);
                     margin: 0;
                 }
 
                 .next-arrow {
                     position: relative;
+                }
+
+                .next-arrow:hover , .prev-arrow:hover {
+                    background-color: var(--color-dark-blue);
                 }
 
                 .next-arrow::before {
@@ -117,17 +130,18 @@
                     bottom: 13px;
                     left: 13px;
                 }
+                
             }
         }
     }
 
-    .category-list {
+    .main-category-list {
         display: flex;
         height: 80px;
         align-items: center;
         justify-content: stretch;
 
-        .category-item {
+        .main-category-item {
             height: 80px;
             display: block;
             min-width: 324px; 
@@ -137,7 +151,7 @@
             transition: var(--transition-duration);
         }
 
-        .category-btn {
+        .main-category-button {
             border: none;
             background-color: var(--color-dark-blue);
             font-size: 21px;
@@ -150,17 +164,12 @@
             justify-content: center;
         }
 
-        .category-item:hover {
+        .main-category-item:hover {
             flex-basis: 100%;
         }
 
-        .category-btn-colorful {
+        .main-category-button__colorful {
             background-color: var(--color-blue);
-            height: 80px;
-            min-width: 324px;
-        }
-
-        .category-item {
             height: 80px;
             min-width: 324px;
         }
