@@ -264,6 +264,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* TODO: отдели пустой строкой блоки со стилями */
 }
 .main-section .main-nav .main-nav-button {
   border: none;
@@ -592,9 +593,9 @@ button {
 }
 .main-introduction .introduction-patent .patent-properties .patent-properties-list li:nth-of-type(1):hover {
   margin: 0;
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
@@ -695,6 +696,7 @@ button {
   line-height: 21px;
   position: relative;
   margin: 0 0 20px 17px;
+  position: relative;
 }
 .main-introduction .introduction-news .news-plot-content .news-plot-list p:last-of-type {
   margin-bottom: 0;
@@ -829,6 +831,7 @@ footer .footer-container .footer-top li a {
   color: var(--color-black);
 }
 footer .footer-container .footer-top li a:hover {
+  /* TODO: при ховере увеличение размера фонта сдвигаются остальные элементы списка, т.к. увеличивают размер самого элемента. Нужно пофиксить, чтобы соседние элементы не сдвигались  */
   font-size: 16px;
   color: var(--color-dark-blue);
 }
