@@ -1,4 +1,4 @@
-.intoduction {
+.main-introduction {
 
     .introduction-first-line {
         margin: 80px 0 80px;
@@ -6,22 +6,22 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        .innovaton {
+        .introduction-innovation {
             position: relative;
             height: 580px;
             max-width: 526px;
-            background-color: #00868A;
+            background-color: var(--color-dark-blue);
 
-            .innovaton-btn {
+            .innovation-button {
                 position: absolute;
                 top: 35px;
                 border: none;
                 padding: 9px 15px 10px;
-                color: white;
+                color: var(--color-white);
                 line-height: 21px;
                 left: 40px;
                 font-size: 18px;
-                background-color: #4FBFA5;
+                background-color: var(--color-blue);
             }
 
             h3 {
@@ -29,7 +29,7 @@
                 font-size: 30px;
                 font-weight: 300;
                 line-height: 45px;
-                color: white;
+                color: var(--color-white);
                 margin-left: 40px;
             }
 
@@ -37,16 +37,16 @@
                 display: flex;
                 align-items: center;
 
-                .innovaton-info-btn {
+                .innovation-info-button {
                     margin: 25px 20px 45px 40px;
                     position: relative;
                     width: 50px;
-                    background-color: #00868A;
+                    background-color: var(--color-dark-blue);
                     height: 40px;
-                    border: 1px solid white;
+                    border: 1px solid var(--color-white);
                 }
 
-                .innovaton-info-btn::before {
+                .innovation-info-button::before {
                     content: "";
                     position: absolute;
                     width: 31px;
@@ -57,14 +57,29 @@
                     left: 10px;
                 }
 
-                .innovation-details {
+                .innovation-info-button:hover {
+                    margin: 25px 20px 45px 40px;
+                    position: relative;
+                    width: 50px;
+                    background-color: var(--color-blue);
+                    height: 40px;
+                    border: 1px solid var(--color-white);
+                }
+
+                .innovation-details-link {
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 1px;
                     margin-bottom: 15px;
-                    color: white;
+                    color: var(--color-white);
                     text-transform: uppercase;
                     font-weight: 600;
+                    cursor: pointer;
+                }
+
+                .innovation-details-link:hover {
+                    font-size: 20px;
+                    border-bottom: 3px solid var(--color-blue);
                 }
             }
 
@@ -74,18 +89,18 @@
         }
     }
 
-    .patent {
+    .introduction-patent {
         width: 638px;
         position: relative;
 
-        .patent-btn {
+        .patent-button {
             position: absolute;
             border: none;
             padding: 9px 15px 10px;
             color: white;
             line-height: 21px;
             font-size: 18px;
-            background-color: #4FBFA5;
+            background-color: var(--color-blue);
         }
 
         .patent-properties {
@@ -94,7 +109,7 @@
             justify-content: space-between;
 
 
-            .patent-properties_list {
+            .patent-properties-list {
                 position: relative;
 
                 li {
@@ -105,7 +120,7 @@
 
                     h2 {
                         font-size: 48px;
-                        color: lightgray;
+                        color: var(--color-light-gray);
                         line-height: 72px;
                         font-weight: 500;
                     }
@@ -115,7 +130,7 @@
                         font-size: 14px;
                         line-height: 21px;
                         width: 144px;
-                        color: lightgray;
+                        color: var(--color-light-gray);
                     }
                 }
 
@@ -146,12 +161,12 @@
                 }
 
                 li:hover h2 {
-                    color: #00868A;
+                    color: var(--color-dark-blue);
                 }
 
                 li:hover p {
                     font-size: 18px;
-                    color: #000000;
+                    color: var(--color-black);
                     width: 200px;
                 }
             }
@@ -161,7 +176,7 @@
 
     }
 
-    .news {
+    .introduction-news {
         display: flex;
         position: relative;
 
@@ -194,7 +209,7 @@
             background-color: var(--color-dark-blue);
         }
 
-        .news-btn {
+        .news-button {
             border: none;
             padding: 9px 15px 10px;
             color: white;
@@ -202,13 +217,13 @@
             left: 40px;
             top: 35px;
             font-size: 18px;
-            background-color: #00868A;
+            background-color: var(--color-dark-blue);
             position: absolute;
         }
 
         .news-title-list {
             width: 526px;
-            background-color: #4FBFA5;
+            background-color: var(--color-blue);
             padding-top: 105px;
 
             .news-title-item {
@@ -224,7 +239,7 @@
                     display: block;
                 }
 
-                .news-title-btn {
+                .news-title-button {
                     border: none;
                     background-color: transparent;
                     color: white;
@@ -232,19 +247,11 @@
                     line-height: 27px;
                     padding: 0;
                 }
-
-
-
-
-
             }
-
-
-
         }
 
-        .news-plot_content {
-            background-color: rgba(172, 226, 228, 0.3137254902);
+        .news-plot-content {
+            background-color: var(--color-light-blue);
             height: 522px;
 
             h3 {
@@ -253,7 +260,7 @@
                 font-size: 24px;
             }
 
-            .idk {
+            .news-plot-subtitle {
                 font-size: 18px;
                 padding: 0 60px 20px;
                 span {
@@ -281,7 +288,7 @@
                 li::before {
                     content: "";
                     position: absolute;
-                    background-color: #00868A;
+                    background-color: var(--color-dark-blue);
                     border-radius: 50%;
                     height: 6px;
                     top: 7px;
