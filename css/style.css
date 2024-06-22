@@ -672,6 +672,7 @@ button {
   height: 100%;
   padding: 40px 40px 0;
   display: block;
+  cursor: pointer;
 }
 .main-introduction .introduction-news .news-title-list .news-title-list-item .news-title-button {
   border: none;
