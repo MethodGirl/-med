@@ -230,8 +230,44 @@
             <button class="news-button" type="button">Новости</button>
             <div class="news-title">
               <ul class="news-title-list">
+                <!-- TODO: Лучше назвать new-title-list-item, чтобы было понятно что этот item относится к списку -->
+                <li class="news-title-item">
                 <li class="news-title-list-item">
                   <button class="news-title-button" type="button">
+                  <label for="a">
+                    Почему рекомендуется посещать профессионального
+                    косметолога. Мнение специалистов центра
+                  </label>
+                </button>
+              </li>
+
+              <li class="news-title-item">
+                <button class="news-title-button" type="button">
+                  <label for="b">
+                    Стандартизация деятельности клиник в соответствии с ISO
+                    9001:2015.
+                  </label>
+                </button>
+              </li>
+              <li class="news-title-item">
+                <button class="news-title-button">
+                  <label for="c">
+                    Индивидуальный подход к каждому пациенту и подбор
+                    оптимальных косметологических методик.
+                  </label>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="news-plot">
+            <div class="news-plot-content" id="a_1">
+              <h3 class="news-plot-title">
+                Почему рекомендуется посещать профессионального косметолога.
+                Мнение специалистов центра
+              </h3>
+              <ul class="news-plot-list">
+                <!-- TODO: класс news-plot-item нигде не используется в стилях, надо убрать весь неиспользуемый код -->
+                <li class="news-plot-item">
                     <label for="a">
                       Почему рекомендуется посещать профессионального
                       косметолога. Мнение специалистов центра
@@ -586,6 +622,16 @@
           <address class="footer-contacts-info">
             <div class="footer-info phone-number">
               <p class="footer-info-title">телефон</p>
+              <!-- TODO: контент в тегах размещай вот так, чтоб содержимое было на отдельной строке от тега, если нужно в несколько строк всё уместить
+                <a href="tel:+78121234567" class="footer-phone-link">
+                  +7 (812) 123-45-67
+                </a>
+
+                пробегись по всей хтмлке и пофиксь везде, так гораздо проще читается
+              -->
+              <a href="tel:+78121234567" class="footer-phone-link phone-number"
+                >+7 (812) 123-45-67</a
+              >
               <a href="tel:+78121234567" class="footer-phone-link phone-number">
                 +7 (812) 123-45-67
               </a>

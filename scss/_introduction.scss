@@ -33,7 +33,7 @@
                 margin-left: 40px;
             }
 
-            .innovation-more-info {
+            .innovation-moreinfo {
                 display: flex;
                 align-items: center;
 
@@ -108,6 +108,7 @@
             padding-top: 85px;
             justify-content: space-between;
 
+
             .patent-properties-list {
                 position: relative;
 
@@ -145,6 +146,8 @@
                     bottom: 240px;
                 }
 
+
+
                 li:hover {
                     margin: 0;
                     transform-origin: bottom left;
@@ -153,7 +156,7 @@
 
                 li:nth-of-type(1):hover {
                     margin: 0;
-                    transform-origin: left;
+                    transform-origin: top left;
                     transform: scale(1.5);
                 }
 
@@ -167,7 +170,10 @@
                     width: 200px;
                 }
             }
+
         }
+
+
     }
 
     .introduction-news {
@@ -189,6 +195,7 @@
         input#b:checked~.news-plot #b_2 {
             display: block;
         }
+
 
         input#b:checked~.news-title label[for=b] {
             background-color: var(--color-dark-blue);
@@ -222,6 +229,8 @@
             .news-title-list-item {
                 height: 139px;
                 display: flex;
+
+
 
                 label {
                     width: 100%;
@@ -263,6 +272,10 @@
 
             .news-plot-list {
                 padding: 0 60px 78px;
+
+                li {
+                    position: relative;
+                    margin-bottom: 20px;
 
                 p {
                     font-size: 14px;
