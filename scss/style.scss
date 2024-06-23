@@ -141,49 +141,8 @@ svg * {
  */
 
  /* TODO: импорт шрифтов вынести в отдельный файл, чтобы не захломлять файл слитей */
- 
- @font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../font/Gilroy-ExtraBold.otf") format("OpenType");
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Gilroy";
-    font-style: light;
-    font-weight: 300;
-    src: url("../font/Gilroy-Light.otf") format("OpenType");
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/gilroy-medium.ttf") format("OpenType");
-    font-display: swap;
-  }
 
 /* TODO: переменные тоже лучше в отдельный файл вынести и учитывая, что мы используем scss, то будем использвать scss-переменные */
-
-:root {
-  --color-blue: #4FBFA5;
-  --color-dark-blue: #00868A;
-  --color-light-blue: #ace2e450;
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-light-gray: #C4C4C4;
-
-  --font-family-base: "Gilroy", sans-serif;
-  --border: 1px solid var(--color-white);
-
-  --container-width: 1295px;
-  --container-padding-x: 15px;
-
-  --transition-duration: 0.2s;
-}
 
 body {
   font-family: var(--font-family-base);
@@ -199,6 +158,7 @@ a {
 a, 
 button {
   transition-duration: var(--transition-duration);
+  cursor: pointer;
 }
 
 @import "_header";
@@ -206,6 +166,8 @@ button {
 @import "_introduction";
 @import "_offers";
 @import "_footer";
+@import "_root";
+@import "_fonts";
 
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
@@ -249,8 +211,4 @@ button {
   width: 25px;
   transform: translate(0, -50%);
   height: 18px;
-}
-
-.news-plot-content{
-    display: none;
 }
