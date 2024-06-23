@@ -40,9 +40,14 @@
                 left: 30px;
                 background-color: var(--color-blue);
             }
+
+            .offers-name-button:hover {
+                background-color: var(--color-dark-blue);
+            }
+
         }
 
-        .offers-moreinfo {
+        .offers-more-info {
             display: flex;
             background-color: var(--color-dark-blue);
             align-items: flex-end;
@@ -54,7 +59,7 @@
                 color: var(--color-white);
             }
 
-            .offers-moreinfo-button {
+            .offers-more-info-button {
                 margin: 37px 30px 37px 0;
                 position: relative;
                 width: 70px;
@@ -63,7 +68,7 @@
                 border: 1px solid var(--color-white);
             }
 
-            .offers-moreinfo-button::before {
+            .offers-more-info-button::before {
                 content: "";
                 position: absolute;
                 width: 31px;
@@ -73,7 +78,7 @@
                 left: 8px;
             }
 
-            .offers-moreinfo-button:hover {
+            .offers-more-info-button:hover {
                 background-color: var(--color-blue);
             }
         }
