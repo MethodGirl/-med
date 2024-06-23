@@ -15,11 +15,11 @@
             padding: 0;
             margin-right: 58px
         }/* TODO: отдели пустой строкой блоки со стилями */
+
         .main-nav-button:hover {
             border-bottom: 1px solid var(--color-white);
         }
         
-
         .main-nav-button:last-of-type {
             margin-right: 100px
         }
@@ -130,7 +130,6 @@
                     bottom: 13px;
                     left: 13px;
                 }
-                
             }
         }
     }
@@ -174,6 +173,4 @@
             min-width: 324px;
         }
     }
-
-
 }
