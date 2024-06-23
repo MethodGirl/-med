@@ -27,6 +27,7 @@ footer {
 
             li {
                 margin-bottom: 15px;
+                display: inline-block;
 
                 a {
                     font-size: 14px;
@@ -36,7 +37,6 @@ footer {
 
                 a:hover {
                     /* TODO: при ховере увеличение размера фонта сдвигаются остальные элементы списка, т.к. увеличивают размер самого элемента. Нужно пофиксить, чтобы соседние элементы не сдвигались  */
-                    font-size: 16px;
                     color: var(--color-dark-blue);
                 }
             }
@@ -44,15 +44,21 @@ footer {
             li:last-child {
                 margin-bottom: 0;
             }
+
+            li:hover {
+                transform: scale(1.2);
+                transform-origin: left;
+            }
         }
 
         address {
             font-style: normal;
 
-            .footer-info:first-child{
+            .footer-info:first-child {
                 margin-bottom: 30px;
                 height: 55px;
             }
+
             .footer-info {
                 margin-bottom: 30px;
                 height: 108px;
@@ -83,8 +89,6 @@ footer {
                     line-height: 31px;
                     font-weight: 700;
                 }
-
-
 
                 .footer-address-link {
                     background-color: var(--color-dark-blue);
@@ -132,14 +136,15 @@ footer {
             text-transform: uppercase;
         }
 
-
         ul {
             display: flex;
             align-items: center;
+
             li {
                 width: 80px;
                 padding: 25px;
             }
+
             li:last-child {
                 width: 65px;
             }
