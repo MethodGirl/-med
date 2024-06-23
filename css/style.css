@@ -144,41 +144,8 @@ svg * {
   Удаляем все анимации и переходы для людей,
   которые предпочитают их не использовать
  */
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../font/Gilroy-ExtraBold.otf") format("OpenType");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  font-style: light;
-  font-weight: 300;
-  src: url("../font/Gilroy-Light.otf") format("OpenType");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../font/gilroy-medium.ttf") format("OpenType");
-  font-display: swap;
-}
-:root {
-  --color-blue: #4FBFA5;
-  --color-dark-blue: #00868A;
-  --color-light-blue: #ace2e450;
-  --color-white: #FFFFFF;
-  --color-black: #000000;
-  --color-light-gray: #C4C4C4;
-  --font-family-base: "Gilroy", sans-serif;
-  --border: 1px solid var(--color-white);
-  --container-width: 1295px;
-  --container-padding-x: 15px;
-  --transition-duration: 0.2s;
-}
-
+/* TODO: импорт шрифтов вынести в отдельный файл, чтобы не захломлять файл слитей */
+/* TODO: переменные тоже лучше в отдельный файл вынести и учитывая, что мы используем scss, то будем использвать scss-переменные */
 body {
   font-family: var(--font-family-base);
   font-size: 18px;
@@ -194,6 +161,7 @@ a,
 button {
   -webkit-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
+  cursor: pointer;
 }
 
 .page-header-top {
@@ -298,6 +266,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* TODO: отдели пустой строкой блоки со стилями */
 }
 .main-section .main-nav .main-nav-button {
   border: none;
@@ -487,6 +456,7 @@ button {
   height: 580px;
   max-width: 526px;
   background-color: var(--color-dark-blue);
+  /* TODO: moreinfo это два слова, надо разделить */
 }
 .main-introduction .introduction-first-line .introduction-innovation .innovation-button {
   position: absolute;
@@ -499,6 +469,10 @@ button {
   font-size: 18px;
   background-color: var(--color-blue);
 }
+.main-introduction .introduction-first-line .introduction-innovation .innovation-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-blue);
+}
 .main-introduction .introduction-first-line .introduction-innovation h3 {
   padding-top: 105px;
   font-size: 30px;
@@ -507,7 +481,7 @@ button {
   color: var(--color-white);
   margin-left: 40px;
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,7 +489,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo .innovation-info-button {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info .innovation-info-button {
   margin: 25px 20px 45px 40px;
   position: relative;
   width: 50px;
@@ -523,7 +497,7 @@ button {
   height: 40px;
   border: 1px solid var(--color-white);
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo .innovation-info-button::before {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info .innovation-info-button::before {
   content: "";
   position: absolute;
   width: 31px;
@@ -533,7 +507,7 @@ button {
   bottom: 13px;
   left: 10px;
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo .innovation-info-button:hover {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info .innovation-info-button:hover {
   margin: 25px 20px 45px 40px;
   position: relative;
   width: 50px;
@@ -541,7 +515,7 @@ button {
   height: 40px;
   border: 1px solid var(--color-white);
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo .innovation-details-link {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info .innovation-details-link {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;
@@ -551,7 +525,7 @@ button {
   font-weight: 600;
   cursor: pointer;
 }
-.main-introduction .introduction-first-line .introduction-innovation .innovation-moreinfo .innovation-details-link:hover {
+.main-introduction .introduction-first-line .introduction-innovation .innovation-more-info .innovation-details-link:hover {
   font-size: 20px;
   border-bottom: 3px solid var(--color-blue);
 }
@@ -570,6 +544,9 @@ button {
   line-height: 21px;
   font-size: 18px;
   background-color: var(--color-blue);
+}
+.main-introduction .introduction-patent .patent-button:hover {
+  background-color: var(--color-dark-blue);
 }
 .main-introduction .introduction-patent .patent-properties {
   display: -webkit-box;
@@ -626,9 +603,10 @@ button {
 }
 .main-introduction .introduction-patent .patent-properties .patent-properties-list li:nth-of-type(1):hover {
   margin: 0;
-  -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
+  /* TODO: надо убрать топ, а то элемент вниз сдвигается */
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
@@ -679,24 +657,30 @@ button {
   background-color: var(--color-dark-blue);
   position: absolute;
 }
+.main-introduction .introduction-news .news-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
 .main-introduction .introduction-news .news-title-list {
   width: 526px;
   background-color: var(--color-blue);
   padding-top: 105px;
 }
-.main-introduction .introduction-news .news-title-list .news-title-item {
+.main-introduction .introduction-news .news-title-list .news-title-list-item {
   height: 139px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* TODO: почисти код от лишних пустых строк */
 }
-.main-introduction .introduction-news .news-title-list .news-title-item label {
+.main-introduction .introduction-news .news-title-list .news-title-list-item label {
   width: 100%;
   height: 100%;
   padding: 40px 40px 0;
   display: block;
+  cursor: pointer;
 }
-.main-introduction .introduction-news .news-title-list .news-title-item .news-title-button {
+.main-introduction .introduction-news .news-title-list .news-title-list-item .news-title-button {
   border: none;
   background-color: transparent;
   color: white;
@@ -707,6 +691,7 @@ button {
 .main-introduction .introduction-news .news-plot-content {
   background-color: var(--color-light-blue);
   height: 522px;
+  display: none;
 }
 .main-introduction .introduction-news .news-plot-content h3 {
   padding: 35px 60px 25px;
@@ -720,21 +705,20 @@ button {
 .main-introduction .introduction-news .news-plot-content .news-plot-subtitle span {
   color: var(--color-dark-blue);
 }
-.main-introduction .introduction-news .news-plot-content .news-plot-list {
+.main-introduction .introduction-news .news-plot-content .news-plot-main {
   padding: 0 60px 78px;
+  /* TODO: обрати внимание, что на макете точечки лишь немного выезжают за заголовок контента. Нужно пофикситью */
 }
-.main-introduction .introduction-news .news-plot-content .news-plot-list li {
-  position: relative;
-  margin-bottom: 20px;
-}
-.main-introduction .introduction-news .news-plot-content .news-plot-list li p {
+.main-introduction .introduction-news .news-plot-content .news-plot-main p {
   font-size: 14px;
   line-height: 21px;
+  position: relative;
+  margin: 0 0 20px 17px;
 }
-.main-introduction .introduction-news .news-plot-content .news-plot-list li:last-of-type {
+.main-introduction .introduction-news .news-plot-content .news-plot-main p:last-of-type {
   margin-bottom: 0;
 }
-.main-introduction .introduction-news .news-plot-content .news-plot-list li::before {
+.main-introduction .introduction-news .news-plot-content .news-plot-main p::before {
   content: "";
   position: absolute;
   background-color: var(--color-dark-blue);
@@ -789,7 +773,10 @@ button {
   left: 30px;
   background-color: var(--color-blue);
 }
-.main-offers .offers .offers-moreinfo {
+.main-offers .offers .offers-name .offers-name-button:hover {
+  background-color: var(--color-dark-blue);
+}
+.main-offers .offers .offers-more-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,13 +785,13 @@ button {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.main-offers .offers .offers-moreinfo p {
+.main-offers .offers .offers-more-info p {
   font-size: 21px;
   line-height: 31px;
   padding: 25px 15px 25px 30px;
   color: var(--color-white);
 }
-.main-offers .offers .offers-moreinfo .offers-moreinfo-button {
+.main-offers .offers .offers-more-info .offers-more-info-button {
   margin: 37px 30px 37px 0;
   position: relative;
   width: 70px;
@@ -812,7 +799,7 @@ button {
   height: 35px;
   border: 1px solid var(--color-white);
 }
-.main-offers .offers .offers-moreinfo .offers-moreinfo-button::before {
+.main-offers .offers .offers-more-info .offers-more-info-button::before {
   content: "";
   position: absolute;
   width: 31px;
@@ -821,7 +808,7 @@ button {
   bottom: 13px;
   left: 8px;
 }
-.main-offers .offers .offers-moreinfo .offers-moreinfo-button:hover {
+.main-offers .offers .offers-more-info .offers-more-info-button:hover {
   background-color: var(--color-blue);
 }
 
@@ -857,6 +844,7 @@ footer .footer-container .footer-top .footer-services-title {
 }
 footer .footer-container .footer-top li {
   margin-bottom: 15px;
+  display: inline-block;
 }
 footer .footer-container .footer-top li a {
   font-size: 14px;
@@ -864,11 +852,19 @@ footer .footer-container .footer-top li a {
   color: var(--color-black);
 }
 footer .footer-container .footer-top li a:hover {
-  font-size: 16px;
+  /* TODO: при ховере увеличение размера фонта сдвигаются остальные элементы списка, т.к. увеличивают размер самого элемента. Нужно пофиксить, чтобы соседние элементы не сдвигались  */
   color: var(--color-dark-blue);
 }
 footer .footer-container .footer-top li:last-child {
   margin-bottom: 0;
+}
+footer .footer-container .footer-top li:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
 }
 footer .footer-container address {
   font-style: normal;
@@ -965,6 +961,41 @@ footer .container-footer-bottom ul li:last-child {
   width: 65px;
 }
 
+:root {
+  --color-blue: #4FBFA5;
+  --color-dark-blue: #00868A;
+  --color-light-blue: #ace2e450;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-light-gray: #C4C4C4;
+  --font-family-base: "Gilroy", sans-serif;
+  --border: 1px solid var(--color-white);
+  --container-width: 1295px;
+  --container-padding-x: 15px;
+  --transition-duration: 0.2s;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/Gilroy-ExtraBold.otf") format("OpenType");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: light;
+  font-weight: 300;
+  src: url("../font/Gilroy-Light.otf") format("OpenType");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/gilroy-medium.ttf") format("OpenType");
+  font-display: swap;
+}
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
@@ -1012,8 +1043,4 @@ footer .container-footer-bottom ul li:last-child {
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   height: 18px;
-}
-
-.news-plot-content {
-  display: none;
 }
